@@ -30,12 +30,17 @@
 
 //Let's say three people signed up for our service, create 3 instances of User and add each to the users Array
 
-  //code here
+  var rachel = new User('Rachel', 'myemail', 'password1');
+  users.push(rachel);
+  var tyler = new User('Tyler', 'hisemail', 'password2');
+  users.push(tyler);
+  var bobby = new User('Bobby', 'anemail', 'password3');
+  users.push(bobby);
 
 
 //Create a questions Array which is going to hold all of our questions
 
-  //code here
+  var questions = [];
 
 
 //Now, let's say we wanted to create a quiz about JavaScript. Create three instances of Question which contain the following data
@@ -44,7 +49,9 @@
 //title: "T/F: In Javascript, == doesn't check 'type' but just the value - where === checks type and value"
 //Fill in the rest of the required data as you see appropriate.
 
-  //code here
+  var first = new Question('T/F: Inheritance is achieved in JavaScript through Prototypes?');
+  var second = new Question('T/F: JavaScript is just a scripting version of Java');
+  var third = new Question("T/F: In Javascript, == doesn't check 'type' but just the value - where === checks type and value");
 
 
 //Now push all of your instances of Question into the questions Array
