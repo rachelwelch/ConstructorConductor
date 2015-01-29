@@ -56,10 +56,17 @@
 
 //Now push all of your instances of Question into the questions Array
 
-  //code here
+  questions.push(first);
+  questions.push(second);
+  questions.push(third);
 
 console.log('My users Array and my questions arrray are ...');
 //Now loop console.log your users array and your questions array and verify that they're both holding the right data.
 
-  //code here
+  for (var i = 0; i < users.length; i++) {
+  	console.log(users[i]);
+  }
+  for (var i = 0; i < questions.length; i++) {
+  	console.log(questions[i]);
+  }
 
