@@ -46,9 +46,12 @@ console.log('Lenny\'s information is ');
 
 //Now create another instance of User using your own information and then add that to your users array.
 
-  //code here
+  var rachel = new User('Rachel', 'myemail@email.com', 'JSisGreat');
+  users.push(rachel);
 
 console.log('All my users names are ');
 //Now loop through your users Array and console.log every users name. 
 
-  //code here
+  for (var i = 0; i < users.length; i++) {
+    console.log(users[i].name);
+  }
