@@ -30,12 +30,9 @@
 
 //Let's say three people signed up for our service, create 3 instances of User and add each to the users Array
 
-  var rachel = new User('Rachel', 'myemail', 'password1');
-  users.push(rachel);
-  var tyler = new User('Tyler', 'hisemail', 'password2');
-  users.push(tyler);
-  var bobby = new User('Bobby', 'anemail', 'password3');
-  users.push(bobby);
+  users.push(new User('Rachel', 'myemail', 'password1'));
+  users.push(new User('Tyler', 'hisemail', 'password2'));
+  users.push(new User('Bobby', 'anemail', 'password3'));
 
 
 //Create a questions Array which is going to hold all of our questions
@@ -49,7 +46,7 @@
 //title: "T/F: In Javascript, == doesn't check 'type' but just the value - where === checks type and value"
 //Fill in the rest of the required data as you see appropriate.
 
-  var first = new Question('T/F: Inheritance is achieved in JavaScript through Prototypes?');
+  var first = new Question('T/F: Inheritance is achieved in JavaScript through Prototypes?', [true, false], 'True', "Easy");
   var second = new Question('T/F: JavaScript is just a scripting version of Java');
   var third = new Question("T/F: In Javascript, == doesn't check 'type' but just the value - where === checks type and value");
 
